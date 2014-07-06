@@ -1,0 +1,61 @@
+  [1m[36m (1.6ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [1m[35m (1.3ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateContacts (20140706041212)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.4ms)[0m  [1mCREATE TABLE "contacts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "subject" varchar(255), "email" varchar(255), "content" text, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (1.3ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20140706041212"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-05 21:21:23 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/railties-4.0.2/lib/rails/templates/rails/welcome/index.html.erb (3.0ms)
+Completed 200 OK in 80ms (Views: 40.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contacts/new" for 127.0.0.1 at 2014-07-05 21:21:31 -0700
+Processing by ContactsController#new as HTML
+  Rendered contacts/_form.html.erb (73.0ms)
+  Rendered contacts/new.html.erb within layouts/application (851.6ms)
+Completed 200 OK in 1424ms (Views: 1420.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-05 21:21:33 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-05 21:21:33 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-07-05 21:21:33 -0700
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2014-07-05 21:21:33 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-05 21:21:33 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-05 21:21:33 -0700
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2014-07-05 21:21:33 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-05 21:21:33 -0700
+
+
+Started GET "/contacts" for 127.0.0.1 at 2014-07-05 21:21:42 -0700
+Processing by ContactsController#index as HTML
+  [1m[35mContact Load (0.2ms)[0m  SELECT "contacts".* FROM "contacts"
+  Rendered contacts/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 7ms (Views: 6.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/contacts/new" for 127.0.0.1 at 2014-07-05 21:22:23 -0700
+Processing by ContactsController#new as HTML
+  Rendered contacts/_form.html.erb (3.7ms)
+  Rendered contacts/new.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 12ms (Views: 10.8ms | ActiveRecord: 0.0ms)
