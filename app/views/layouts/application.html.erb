@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html>
   <title><%= yield(:title) %></title>
-  <title>Site</title>
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+  <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css'>
   <%= csrf_meta_tags %>
 </head>
 <body>
   <div class="container-fluid">
   <div class="md-9">
 <%= nav_bar :fixed => :top, :responsive => true  do %>
+<%= image_tag("kk-lgo.png", :alt => "KK", :class => 'kk') %>
  <%= menu_group do %>
         <%= menu_item "Home", root_path %>
         <%= menu_item "About Me", about_index_path %>

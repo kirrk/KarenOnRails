@@ -11,3 +11,40 @@
  *= require_self
  *= require_tree .
  */
+
+body {
+  font-family: "Roboto Condensed", Helvetica, sans-serif;
+}
+body > div > div.page-header {
+  margin: 15em auto .5em 2.3em;
+}
+body > div > div.md-9 > div > div > div {
+  margin: 0 0 1em 0;
+  padding: 0;
+}
+.navbar .nav {
+  float: right !important;
+}
+body > div > div.md-9 > div > div {
+  background: #363636;
+}
+.navbar .nav > li > a {
+  color: #fff !important;
+  text-shadow: none !important;
+  font-family: "Roboto Condensed", Helvetica, sans-serif;
+  font-size: 1.5em;
+}
+.navbar .nav > li > a:hover {
+  color: #ccc;
+}
+.navbar .nav > .active > a {
+  color: #363636 !important;
+  text-decoration: underline !important;
+}
+h1 {
+  font-family: "Roboto Condensed", Helvetica, sans-serif !important;
+}
+/** logo **/
+.kk {
+  margin: 1em 0 0 5em;
+}
