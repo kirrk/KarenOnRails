@@ -29,6 +29,11 @@ gem 'jbuilder', '~> 1.2'
 
 gem 'twitter-bootstrap-rails', :git => 'git://github.com/seyhunak/twitter-bootstrap-rails.git'
 
+gem 'pry'
+
+gem 'less-rails'
+
+gem 'therubyracer', '~> 0.11.4', platforms: :ruby
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.

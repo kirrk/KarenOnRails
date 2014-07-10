@@ -1,14 +1,25 @@
 <!DOCTYPE html>
 <html>
-<head>
+  <title><%= yield(:title) %></title>
   <title>Site</title>
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
+  <div class="container-fluid">
+  <div class="md-9">
+<%= nav_bar :fixed => :top, :responsive => true  do %>
+ <%= menu_group do %>
+        <%= menu_item "Home", root_path %>
+        <%= menu_item "About Me", about_index_path %>
+        <%= menu_item "Contact Me", new_contact_path %>
+    <% end %>
+<% end %>
 
+  </div>
 <%= yield %>
 
+</div>
 </body>
 </html>

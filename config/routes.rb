@@ -1,5 +1,9 @@
 Site::Application.routes.draw do
   resources :contacts
+  get "/contact" => redirect("/contacts")
+  resources :about
+  resources :skills
+  root to: 'mains#index'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
