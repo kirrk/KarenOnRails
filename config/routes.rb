@@ -1,4 +1,5 @@
 Site::Application.routes.draw do
+  get "skills/index"
   resources :contacts
   get "/contact" => redirect("/contacts")
   resources :about

@@ -12,6 +12,26 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require jquery.easing.1.3.min
 //= require twitter/bootstrap
-//= require turbolinks
-//= require_tree .
+//= require angular.min
+
+jQuery(document).ready(function ($) {
+  $('h1, div.social.dash').hover(function() {
+      $('div.social.dash').show().stop().animate ({ left: '0', opacity: 0.9}, 500, 'easeInSine');
+
+    }, function() {
+      $('div.social.dash').show().stop().animate ({ left: '-80px', opacity: 1.0}, 1500, 'easeOutBounce');
+//end hover
+  });
+
+$('div.social.dash a').find('img').hover(function() {
+      $(this).css('opacity', 1.0);
+
+}, function() {
+      $(this).css('opacity', .5);
+
+  });
+
+});
+

@@ -13,6 +13,24 @@
 
 ActiveRecord::Schema.define(version: 20140709005355) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
+  create_table "comments", force: true do |t|
+    t.string   "author_url"
+    t.string   "author_email"
+    t.string   "user_ip"
+    t.string   "user_agent"
+    t.string   "referrer"
+    t.text     "content"
+    t.boolean  "approved"
+    t.datetime "created_at",       null: false
+    t.datetime "updated_at",       null: false
+    t.integer  "commentable_id"
+    t.string   "commentable_type"
+    t.string   "author"
+  end
+
   create_table "contacts", force: true do |t|
     t.string   "name"
     t.string   "subject"
@@ -29,5 +47,45 @@ ActiveRecord::Schema.define(version: 20140709005355) do
     t.datetime "created_at"
     t.datetime "updated_at"
   end
+
+  create_table "posts", force: true do |t|
+    t.string   "title"
+    t.text     "body"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.integer  "author_id"
+    t.boolean  "published"
+    t.string   "image"
+  end
+
+  create_table "projects", force: true do |t|
+    t.string   "name"
+    t.string   "technologies_used"
+    t.datetime "created_at",        null: false
+    t.datetime "updated_at",        null: false
+    t.integer  "author_id"
+  end
+
+  create_table "users", force: true do |t|
+    t.string   "email",                  default: "", null: false
+    t.string   "encrypted_password",     default: "", null: false
+    t.string   "reset_password_token"
+    t.datetime "reset_password_sent_at"
+    t.datetime "remember_created_at"
+    t.integer  "sign_in_count",          default: 0,  null: false
+    t.datetime "current_sign_in_at"
+    t.datetime "last_sign_in_at"
+    t.string   "current_sign_in_ip"
+    t.string   "last_sign_in_ip"
+    t.datetime "created_at",                          null: false
+    t.datetime "updated_at",                          null: false
+    t.string   "role"
+    t.string   "provider"
+    t.string   "uid"
+    t.string   "name"
+  end
+
+  add_index "users", ["email"], name: "index_users_on_email", unique: true, using: :btree
+  add_index "users", ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true, using: :btree
 
 end
