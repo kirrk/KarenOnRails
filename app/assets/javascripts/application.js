@@ -16,6 +16,9 @@
 //= require twitter/bootstrap
 //= require angular.min
 //= require skills.js.coffee
+//= require_tree ./services/skills
+//= require_tree ./controllers/skills
+
 
 jQuery(document).ready(function ($) {
   $('h1, div.social.dash').hover(function() {
