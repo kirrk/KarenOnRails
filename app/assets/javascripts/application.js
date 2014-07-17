@@ -15,7 +15,7 @@
 //= require jquery.easing.1.3.min
 //= require twitter/bootstrap
 //= require angular.min
-//= require skills
+//= require skills.js.coffee
 
 jQuery(document).ready(function ($) {
   $('h1, div.social.dash').hover(function() {
