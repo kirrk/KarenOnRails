@@ -1,0 +1,30 @@
+// Place all the styles related to the Skills controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+div.left {
+  float: left;
+  margin: 1em 1em 0 .7em;
+}
+div.left p {
+  color: #333;
+  padding: 0 0 0 .8em;
+  margin: 0 0 0 .5em;
+}
+form {
+  margin: 3em 0 1.5em;
+}
+.label, .badge {
+  background: #409dc9 !important;
+}
+div.thumbnail {
+ min-height: 10em !important;
+ padding: .5em 0 0 .5em;;
+ max-width: 27em;
+ background: #eee;
+}
+div.thumbnail img {
+  float: left;
+  padding: 0 .4em 0;
+  max-width: 50%;
+}
