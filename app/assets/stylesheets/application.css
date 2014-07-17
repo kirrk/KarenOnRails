@@ -44,11 +44,22 @@ div.social.dash {
   background: #ddd;
   width: 65px;
   height: 200px;
-  padding: 20px 20px 0 20px;
+  padding: 20px 20px 0 30px;
   position: absolute;
   left: -80px;
   top: 150px;
   z-index: 100;
+}
+div.social.dash p {
+font-family: 'Open Sans Condensed', sans-serif;
+font-size: 1.5em;
+ transform: rotate(-90deg);
+ -webkit-transform: rotate(-90deg);
+ width: 90px;
+ display: block;
+ position: absolute;
+ margin: 80px 25px;
+ color: #3c3434;
 }
 div.social.dash img {
   opacity: .5;
