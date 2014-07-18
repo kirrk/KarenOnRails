@@ -5,3 +5,5 @@
 
 #= require_self
 #= require_tree ./controllers/skills
+
+@skillk = angular.module('skillk', [])
