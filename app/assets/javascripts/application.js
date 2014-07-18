@@ -18,8 +18,6 @@
 //= require skills.js.coffee
 //= require_tree ./services/skills
 //= require_tree ./controllers/skills
-//= require_tree .
-//= depend_on_asset "bg.png"
 
 
 jQuery(document).ready(function ($) {
