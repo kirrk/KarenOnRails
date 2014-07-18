@@ -4,5 +4,4 @@
 
 
 #= require_self
-#= require_tree ./services/skills
 #= require_tree ./controllers/skills
