@@ -10,14 +10,16 @@
 // Read Sprockets README (https://github.com/sstephenson/sprockets#sprockets-directives) for details
 // about supported directives.
 //
+
+//= require_tree ./services/skills
+//= require_tree ./controllers/skills
 //= require jquery
 //= require jquery_ujs
 //= require jquery.easing.1.3.min
 //= require twitter/bootstrap
 //= require angular.min
 //= require skills.js.coffee
-//= require_tree ./services/skills
-//= require_tree ./controllers/skills
+
 
 
 jQuery(document).ready(function ($) {
