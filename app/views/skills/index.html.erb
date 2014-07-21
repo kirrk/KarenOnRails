@@ -20,7 +20,7 @@
   <div ng-controller="IndexCtrl">
     <div class="left" ng-repeat="skill in skills | filter:query | orderBy:orderProp">
       <div class="thumbnail">
-      <%= image_tag("/assets/{{skill.shortname}}_s.png", :alt=>"{{skill.alt}}") %>
+      <%= image_tag("/assets/angular_s.png", :alt=>"{{skill.alt}}") %>
 
       <p>{{skill.description}}</p>
       </div>
