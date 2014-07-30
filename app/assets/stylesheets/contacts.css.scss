@@ -9,3 +9,9 @@ div.form-actions {
 textarea {
   height: 150px;
 }
+input, textarea {
+  width: 350px !important;
+}
+input[type="submit"] {
+  width: 206px !important;
+}

@@ -20,6 +20,7 @@ a, a:hover {
 }
 h1 {
   color: #333 !important;
+  padding: .5em 0 .3em;
 }
 body {
   font-family: "Roboto Condensed", Helvetica, sans-serif;
@@ -72,22 +73,24 @@ border: none !important;
   float: right !important;
 }
 body > div > div.col-md-9 > div > div {
-  background: url('bg.png') #3c3434 repeat-x;
+  background: url('bg.jpg') #333 repeat-x;
+  border-bottom: 1px solid #904a4a;
   margin: 0;
 }
 .navbar .nav > li {
-    padding: 1em 0 .5em 0;
+    padding: 2em 0 .5em .7em;
 }
 .navbar .nav > li > a {
   color: #eee !important;
   text-shadow: none !important;
   font-family: "Roboto Condensed", Helvetica, sans-serif;
   font-size: 1.4em;
+  padding: 0 0 0 .5em;
   text-transform: uppercase;
   box-shadow: none !important;
 }
 .navbar .nav > li > a:hover {
-  color: #4aa4c5 !important;
+  color: #b97373 !important;
   -o-transition:color .4s ease-out, background 1s ease-in;
   -ms-transition:color .2s ease-out, background 1s ease-in;
   -moz-transition:color .2s ease-out, background 1s ease-in;
@@ -103,12 +106,15 @@ body > div > div.col-md-9 > div > div > div > div > ul > li:hover a {
     color: #363636 !important;
 }
 .navbar .nav > .active > a {
-  color: #4aa4c5 !important;
-  text-decoration: underline !important;
+  color: #b97373 !important;
+  border-bottom: thin solid #b97373 !important;
   box-shadow: none !important;
 }
 h1 {
   font-family: "Roboto Condensed", Helvetica, sans-serif !important;
+  margin: 2em 0 .5em 0;
+  border-bottom: 2px solid #a62d3a;
+  width: 70%;
 }
 /** logo **/
 .kk {
