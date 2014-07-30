@@ -74,7 +74,7 @@ border: none !important;
 }
 body > div > div.col-md-9 > div > div {
   background: url('bg.jpg') #333 repeat-x;
-  border-bottom: 1px solid #904a4a;
+  border-bottom: 2px solid #904a4a;
   margin: 0;
 }
 .navbar .nav > li {
@@ -116,7 +116,14 @@ h1 {
   border-bottom: 2px solid #a62d3a;
   width: 70%;
 }
+.about-img {
+  margin: .5em auto;
+  padding: 0 .1em 0 0;
+  float: left;
+  vertical-align: top;
+}
 /** logo **/
 .kk {
   margin: 1em 0 0 5em;
 }
+

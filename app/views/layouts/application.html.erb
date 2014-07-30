@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html ng-app="skillk">
   <title><%= yield(:title) %></title>
+  <meta name="description" content="<%= yield(:content) %>" />
   <%= stylesheet_link_tag    "application", media: "all" %>
   <%= javascript_include_tag "application" %>
   <%= javascript_include_tag  controller_name %>
+  <%= favicon_link_tag 'kk.ico' %>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css'>

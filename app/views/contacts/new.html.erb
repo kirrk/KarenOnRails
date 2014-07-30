@@ -1,6 +1,9 @@
 <%- model_class = Contact -%>
-<% provide(:title, "Contact Me") %>
+<% provide(:title, "Contact Karen Kirr") %>
+<% provide(:content, "Contact Karen Kirr for freelance web development and / or design projects.") %>
+
 
 <div class="page-header">
-  <h1><%=t '.title', :default => 'Contact Me'%></h1>
+  <h1><%=t '.title', :default => 'Contact Karen'%></h1>
+  <p>I specialize in web development and various design services including logo, print and web design. My rates vary based on the project. Have a project in mind that you need some help with? Please contact me via the form below, indicating the project type and budget if possible.</p>
 <%= render :partial => 'form' %>
