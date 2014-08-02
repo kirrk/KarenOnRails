@@ -27,8 +27,7 @@ class ContactsController < ApplicationController
     @contact = Contact.new(contact_params)
   if @contact.save
       ContactMailer.contact_confirmation(@contact).deliver
-      redirect_to @contact, notice: "Thank you for your email!"
-        #render 'confirmation/index'
+        render 'confirmation/index'
     else
       render 'new'
       end
