@@ -27,6 +27,21 @@ config.assets.precompile += %w(skills.js.coffee)
   config.assets.js_compressor = :uglifier
   # config.assets.css_compressor = :sass
 
+  # Don't care if the mailer can't send.
+  config.action_mailer.raise_delivery_errors = true
+
+  # Change mail delvery to either :smtp, :sendmail, :file, :test
+config.action_mailer.delivery_method = :smtp
+config.action_mailer.smtp_settings = {
+  address: "smtp.mail.yahoo.com",
+  port: 465,
+  domain: "karenonrails.com",
+  authentication: "plain",
+  enable_starttls_auto: true,
+  user_name: ENV['EMAIL'],
+  password: ENV['PWD']
+}
+
   # Do not fallback to assets pipeline if a precompiled asset is missed.
 
   # Generate digests for assets URLs.
