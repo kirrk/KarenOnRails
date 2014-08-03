@@ -34,7 +34,6 @@ config.assets.precompile += %w(skills.js.coffee)
 
 
   # Change mail delvery to either :smtp, :sendmail, :file, :test
-ActionMailer::Base.delivery_method = :smtp
 config.action_mailer.default :charset => "utf-8"
 
   # Do not fallback to assets pipeline if a precompiled asset is missed.
