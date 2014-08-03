@@ -29,11 +29,11 @@ body {
 }
 @media (min-width: 950px) {
   body > div > div.page-header {
-    margin: 10em auto .5em 8em !important;
+    margin: 12em auto .5em 8em !important;
  }
 }
 body > div > div.page-header {
-  margin: 5em auto .5em 4em;
+  margin: 4em auto .5em 4em;
   clear: both;
 }
 body > div > div.col-md-9 > div > div > div {
@@ -80,7 +80,7 @@ border: none !important;
 body > div > div.col-md-9 > div > div {
   background: url('bg.jpg') #333 repeat-x;
   margin: 0;
-  border-bottom: 4px solid #904a4a;
+  border-bottom: 4px solid #904a4a !important;
 }
 .nav-collapse .nav > li > a, .nav-collapse .dropdown-menu a {
     font-weight: 500 !important;
@@ -120,7 +120,7 @@ body > div > div.col-md-9 > div > div > div > div > ul > li:hover a {
 }
 h1 {
   font-family: "Roboto Condensed", Helvetica, sans-serif !important;
-  margin: 2em 0 .5em 0 !important;
+  margin: 0 0 .5em 0 !important;
   border-bottom: 2px solid #a62d3a;
   width: 70%;
 }
