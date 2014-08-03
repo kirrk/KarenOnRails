@@ -27,9 +27,15 @@ body {
   line-height: 1.6;
   color: #3c3c3c;
 }
+@media (min-width: 950px) {
+  body > div > div.page-header {
+    margin: 10em auto .5em 8em !important;
+}
+}
 body > div > div.page-header {
-  margin: 10em auto .5em 8em;
+  margin: 5em auto .5em 4em;
   clear: both;
+}
 }
 body > div > div.col-md-9 > div > div > div {
   margin: 0 0 1em 0;
@@ -74,9 +80,12 @@ border: none !important;
 }
 body > div > div.col-md-9 > div > div {
   background: url('bg.jpg') #333 repeat-x;
-  border-bottom: 2px solid #904a4a;
   margin: 0;
+  border-bottom: 4px solid #904a4a;
 }
+.nav-collapse .nav > li > a, .nav-collapse .dropdown-menu a {
+    font-weight: 500 !important;
+  }
 .navbar .nav > li {
     padding: 2em 0 .5em .7em;
 }
@@ -124,6 +133,7 @@ h1 {
 }
 /** logo **/
 .kk {
-  margin: 1em 0 0 5em;
+  margin: 1em 0 1em 5em;
 }
+
 
