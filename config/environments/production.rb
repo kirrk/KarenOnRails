@@ -32,11 +32,10 @@ config.assets.precompile += %w(skills.js.coffee)
   # Don't care if the mailer can't send.
   config.action_mailer.raise_delivery_errors = true
 
-  config.action_mailer.default :charset => "utf-8"
 
   # Change mail delvery to either :smtp, :sendmail, :file, :test
-  config.action_mailer.delivery_method = :smtp
-
+ActionMailer::Base.default_charset = "utf-8"
+ActionMailer::Base.delivery_method = :smtp
 
   # Do not fallback to assets pipeline if a precompiled asset is missed.
 
