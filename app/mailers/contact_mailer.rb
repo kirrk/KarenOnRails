@@ -3,7 +3,7 @@ class ContactMailer < ActionMailer::Base
 
   def contact_confirmation(contact)
     @contact = contact
-    mail to: "kkirr77@gmail.com", subject: "Contact Form Inquiry"
+    mail :to => "kkirr77@gmail.com", :subject => "Contact Form Inquiry"
   end
 
 end
