@@ -30,12 +30,11 @@ body {
 @media (min-width: 950px) {
   body > div > div.page-header {
     margin: 10em auto .5em 8em !important;
-}
+ }
 }
 body > div > div.page-header {
   margin: 5em auto .5em 4em;
   clear: both;
-}
 }
 body > div > div.col-md-9 > div > div > div {
   margin: 0 0 1em 0;
@@ -121,7 +120,7 @@ body > div > div.col-md-9 > div > div > div > div > ul > li:hover a {
 }
 h1 {
   font-family: "Roboto Condensed", Helvetica, sans-serif !important;
-  margin: 2em 0 .5em 0;
+  margin: 2em 0 .5em 0 !important;
   border-bottom: 2px solid #a62d3a;
   width: 70%;
 }

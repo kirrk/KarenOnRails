@@ -2,8 +2,8 @@
 <% provide(:content, "Thank you for contacting Karen.") %>
 
 <div class="page-header">
-  <h1><%=t '.title', :default => 'Thank you for contacting me'%></h1>
+  <h1><%=t '.title', :default => 'Thank you for your inquiry'%></h1>
 
-  <p>Your submission has been received. Karen will respond to your inquiry and be in touch with you shortly.</p>
+  <p>Thank you, <strong><%= @contact.name %></strong>, your submission has been received. Karen will respond to your inquiry and be in touch with you within 24 hours.</p>
 
 </div>
