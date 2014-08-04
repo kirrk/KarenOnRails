@@ -78,7 +78,7 @@ border: none !important;
   float: right !important;
 }
 body > div > div.col-md-9 > div > div {
-  background: url('bg.jpg') #333 repeat-x;
+  background: url('bg2.jpg')repeat;
   margin: 0;
   border-bottom: 4px solid #904a4a !important;
 }
