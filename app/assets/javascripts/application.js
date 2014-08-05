@@ -26,15 +26,49 @@ jQuery(document).ready(function ($) {
     }, function() {
       $('div.social.dash').show().stop().animate ({ left: '-80px', opacity: 1.0}, 1500, 'easeOutBounce');
 //end hover
-  });
+    });
 
 $('div.social.dash a').find('img').hover(function() {
       $(this).css('opacity', 1.0);
 
-}, function() {
+  }, function() {
       $(this).css('opacity', .5);
 
   });
+
+
+  $(function()
+
+      {
+        $(".slide").hover(moveIn, moveOut);
+
+      });
+
+      function moveIn()
+      {
+        $(".cover", this).stop();
+        $(".cover", this) .animate({
+               top: "300px"
+                      },
+                      {
+                        duration: 700
+                      });
+        $(".slide").find(".boxcontent");
+        $(".boxcontent", this).hide(0).delay(100).fadeIn(1000);
+      }
+
+      function moveOut()
+      {
+        $(".cover", this).stop();
+        $(".cover", this) .animate({
+                        top: "0px"
+                      },
+                      {
+                        duration: 700
+                      });
+      $(".boxcontent", this).slideDown(100);
+
+      }
 
 });
 

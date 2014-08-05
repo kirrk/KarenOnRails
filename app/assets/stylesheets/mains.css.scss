@@ -1,3 +1,57 @@
 // Place all the styles related to the mains controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+div.left-home img {
+  margin: 0;
+}
+.boxgrid {
+  font-family: 'Open Sans', sans-serif;
+  width: 300px;
+  height: 450px;
+  margin: 0 6em 2em 0;
+  float:left;
+  background:#fff;
+  border: 1px solid #904a4a !important;
+  overflow: hidden;
+  position: relative;
+}
+.boxgrid img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 0;
+  }
+.boxcontent {
+  background: #eee;
+  padding: .3em;
+  border-bottom: thin solid #904a4a !important;
+  }
+.boxgrid p {
+  padding: .2em 0 0 .3em;
+  color:#333;
+  background: #eee;
+  font-weight:bold;
+  font:10pt "Lucida Grande", Arial, sans-serif;
+  }
+.boxgrid h3 {
+  padding: .2em 0 0 .3em;
+  background: #eee;
+  color: #904a4a;
+  font-size: 1.2em;
+  margin: 0;
+  font-weight: 500;
+  }
+.boxgrid h4 {
+  font-size: .97em;
+  font-weight: 600;
+  padding: 0 .4em 0 .4em;
+  }
+.boxcaption{
+  float: left;
+  position: absolute;
+  background: #000;
+  height: 100px;
+  width: 100%;
+  opacity: .8;
+}
