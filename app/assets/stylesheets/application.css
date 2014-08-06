@@ -157,6 +157,7 @@ footer {
   width: 100%;
   background: url('bg2.jpg')repeat;
   padding: 0;
+  float: left;
 
 }
 footer p, footer span {
@@ -164,7 +165,10 @@ footer p, footer span {
   color: #fff;
   text-align: left;
   font-weight: 100;
-  padding: 2em;
+  padding: 1.5em 0 1em 2em;
   font-size: .93em;
+}
+footer span {
+  padding: 0 1em 0 1em;
 }
 
