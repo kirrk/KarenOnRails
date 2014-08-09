@@ -18,6 +18,9 @@ a, a:hover {
   border: none !important;
   background: transparent !important;
 }
+.clear {
+  clear: both;
+}
 h1 {
   color: #333 !important;
   padding: .5em 0 .3em;
@@ -131,6 +134,13 @@ h1 {
   margin: 2em 0 .5em 0 !important;
   border-bottom: 2px solid #a62d3a;
   width: 70%;
+}
+h2 {
+  font-family: "Roboto Condensed", Helvetica, sans-serif !important;
+  margin: 1em 0 .5em 0 !important;
+  border-bottom: 1px solid #a62d3a;
+  width: 70%;
+  font-size: 2em;
 }
 @media (min-width: 950px) {
 h1 {
