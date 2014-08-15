@@ -20,6 +20,18 @@
 
 
 jQuery(document).ready(function ($) {
+  $('h1').find('span#one').on('click', function() {
+    $('html, body').animate({
+      scrollTop: $('#webs').offset().top
+      }, 700);
+  });
+
+  $('h1').find('span#two').on('click', function() {
+    $('html, body').animate({
+      scrollTop: $('#apps').offset().top
+      }, 700);
+  });
+
   $('h1, div.social.dash').hover(function() {
       $('div.social.dash').show().stop().animate ({ left: '0', opacity: 0.9}, 500, 'easeInSine');
 

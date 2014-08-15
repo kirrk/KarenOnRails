@@ -25,6 +25,11 @@ h1 {
   color: #333 !important;
   padding: .5em 0 .3em;
 }
+h1 span#one, h1 span#two {
+  font-size: .60em !important;
+  color: #b97373;
+  cursor: pointer;
+}
 body {
   font-family: "Roboto Condensed", Helvetica, sans-serif;
   line-height: 1.6;

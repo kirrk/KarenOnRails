@@ -3,7 +3,7 @@
 
 <div class="page-header">
 
-  <h1><%=t '.title', :default => 'Welcome' %></h1>
+  <h1><%=t '.title', :default => 'Welcome' %><br /> <span id="one">websites |</span> <span id="two">internal web apps</span></h1>
 
   <p class="hello"><strong>Hello, welcome to the home of Karen Kirr, Seattle-based web developer / designer.</strong></p>
 
@@ -12,8 +12,9 @@
   <br /> However, please see a few of my recent web development projects:</p>
 
 <div class="left-home">
-  <div class="boxgrid slide">
+     <h2 id="webs"><%=t '.title', :default => 'Websites' %></h2>
 
+  <div class="boxgrid slide">
   <%= image_tag("projects/clipper.jpg", :alt => "Executed front end development on clippervacations.com", :class => "cover") %>
   <div class="boxcontent">
     <h3>Client: <span>Clipper Vacations</span></h3>
@@ -51,7 +52,7 @@
  </div>
 
    <br class="clear" />
-   <h2><%=t '.title', :default => 'Internal Web Apps' %></h2>
+   <h2 id="apps"><%=t '.title', :default => 'Internal Web Apps' %></h2>
   <div class="boxgrid slide">
     <%= image_tag("projects/clipper-internal-1.png", :alt => "Executed development PHP", :class => "cover") %>
   <div class="boxcontent">
