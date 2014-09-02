@@ -2,6 +2,10 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+//boxgrid styles
+$boxgridheight: 23px;
+$boxgrid_blue: #0c4fa7;
+
 div.left-home {
   margin: 2em 0 0;
 }
@@ -43,10 +47,12 @@ div.left-home img {
   color: #333;
   font-size: 1.2em;
   margin: 0;
+  line-height: $boxgridheight;
   font-weight: 600;
   }
   .boxgrid h3 span {
   font-style: italic;
+  color: $boxgrid_blue;
   }
 .boxgrid h4 {
   font-size: .97em;
