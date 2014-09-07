@@ -1,3 +1,13 @@
 // Place all the styles related to the about controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+div.about p {
+  width: 75%;
+}
+.about-img {
+  margin: .5em auto;
+  padding: 0 .6em 0 0;
+  float: left;
+  vertical-align: top;
+}
