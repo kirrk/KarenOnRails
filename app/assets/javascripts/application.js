@@ -83,7 +83,7 @@ $('div.social.dash a').find('img').hover(function() {
       }
 
       $(".about-img").hover(function() {
-        $(this).attr("src", "/assets/kk-pic-2.jpg").stop().css('opacity', 1).fadeTo(1000, .5);
+        $(this).attr("src", "/assets/kk-pic-2.jpg").stop().css('opacity', .3).fadeTo(1100, .8);
         }, function() {
         $(this).attr("src", "/assets/kk-pic-1.jpg").stop().fadeTo(1000, 1);
   });
