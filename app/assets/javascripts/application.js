@@ -72,10 +72,7 @@ $('div.social.dash a').find('img').hover(function() {
       {
         $(".cover", this).stop();
         $(".cover", this) .animate({
-                        top: "0px"
-                      },
-                      {
-                        duration: 700
+                        top: "0px"},{ duration: 700
                       });
       $(".boxcontent", this).slideDown(100);
 
