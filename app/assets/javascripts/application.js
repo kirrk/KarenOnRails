@@ -84,7 +84,7 @@ $('div.social.dash a').find('img').hover(function() {
         $(this).attr("src", "/assets/kk-pic-1.jpg").stop().fadeTo(1000, 1);
   });
 
-
+      $('div.left-home').delay(700).fadeIn(1000);
 
 });
 
