@@ -4,6 +4,11 @@ Site::Application.routes.draw do
   get "/contact" => redirect("/contacts")
   resources :about
   resources :skills
+
+   scope "/works" do
+    resources :web, :print
+  end
+
   root to: 'mains#index'
 
   # The priority is based upon order of creation: first created -> highest priority.

@@ -16,7 +16,6 @@
  }
 a, a:hover {
   border: none !important;
-  background: transparent !important;
 }
 .clear {
   clear: both;
@@ -27,7 +26,7 @@ h1 {
 }
 h1 span#one, h1 span#two {
   font-size: .60em !important;
-  color: #b97373;
+  color: #b32817;
   cursor: pointer;
 }
 body {
@@ -37,12 +36,16 @@ body {
 }
 @media (min-width: 950px){
 div.container-fluid {
-  margin: 0 0 2em 3.3em;
+  margin: 1em 0 2em 3.3em;
  }
 }
 @media (min-width: 950px) {
   body > div > div.page-header {
-    margin: 12em auto .5em 12em !important;
+    margin: 15em auto .5em 12em !important;
+    min-height: 40em;
+ }
+ div.web-work {
+  width: 600px;
  }
 }
 body > div > div.page-header {
@@ -86,9 +89,10 @@ font-size: 1.5em;
 div.social.dash img {
   opacity: .5;
 }
-div.social.dash a, div.social.dash a:hover, a img  {
+div.social.dash a, div.social.dash a:hover {
 text-decoration: none !important;
 border: none !important;
+background: transparent;
 }
 .navbar .nav {
   float: right !important;
@@ -96,7 +100,7 @@ border: none !important;
 body > div > div.col-md-9 > div > div {
   background: url('bg2.jpg')repeat;
   margin: 0;
-  border-bottom: 4px solid #904a4a !important;
+  border-top: 9px solid #cb3623 !important;
 }
 .nav-collapse .nav > li > a, .nav-collapse .dropdown-menu a {
     font-weight: 500 !important;
@@ -105,7 +109,7 @@ body > div > div.col-md-9 > div > div {
     padding: 2em 0 .5em .7em;
 }
 .navbar .nav > li > a {
-  color: #eee !important;
+  color: #bbb !important;
   text-shadow: none !important;
   font-family: "Roboto Condensed", Helvetica, sans-serif;
   font-size: 1.4em;
@@ -113,37 +117,67 @@ body > div > div.col-md-9 > div > div {
   text-transform: uppercase;
   box-shadow: none !important;
 }
+.navbar .nav > .active > a, .navbar .nav > .active > a:hover, .navbar .nav > .active > a:focus {
+  background-color: transparent !important;
+}
 .navbar .nav > li > a:hover {
-  color: #b97373 !important;
+  color: #ddd !important;
   -o-transition:color .4s ease-out, background 1s ease-in;
   -ms-transition:color .2s ease-out, background 1s ease-in;
   -moz-transition:color .2s ease-out, background 1s ease-in;
   -webkit-transition:color .2s ease-out, background 1s ease-in;
   /* ...and now override with proper CSS property */
-  transition:color .2s ease-out, background 1s ease-in;
+  transition:#bbb.2s ease-out, background 1s ease-in;
   box-shadow: none !important;
+}
+.dropdown-menu {
+  left: 2em !important;
+}
+.dropdown-menu > li > a:hover {
+background:  #cb3623 !important;
+color: #fff;
+}
+.dropdown-menu > .active > a, .dropdown-menu > .active > a:hover, .dropdown-menu > .active > a:focus {
+  background: #cb3623 !important;
 }
 body > div > div.col-md-9 > div > div > div > div > ul > li:hover {
   box-shadow: inset 0 3px 8px rgba(0, 0, 0, 0.125);
 }
 body > div > div.col-md-9 > div > div > div > div > ul > li:hover a {
-    color: #363636 !important;
+   /* color: #aaa !important; */
 }
 .navbar .nav > .active > a {
-  color: #b97373 !important;
-  border-bottom: thin solid #b97373 !important;
+  color: #f55b49 !important;
+  border-bottom: thin solid #f55b49 !important;
   box-shadow: none !important;
 }
+.navbar .nav li.dropdown.open > .dropdown-toggle, .navbar .nav li.dropdown.active > .dropdown-toggle, .navbar .nav li.dropdown.open.active > .dropdown-toggle {
+  background-color: transparent !important;
+}
+.caret {
+  border-top-color: #fff !important;
+  border-bottom-color: #fff !important;
+}
+@media (max-width: 979px) {
+  .nav-collapse .nav > li a:hover {
+    background: #aaa !important;
+    color: #fff;
+  }
+}
+body > div > div.col-md-9 > div > div > div > a {
+  background: #ccc !important;
+}
+
 h1 {
   font-family: "Roboto Condensed", Helvetica, sans-serif !important;
   margin: 2em 0 .5em 0 !important;
-  border-bottom: 2px solid #a62d3a;
+  border-bottom: 2px solid #b32817;
   width: 70%;
 }
 h2 {
   font-family: "Roboto Condensed", Helvetica, sans-serif !important;
   margin: 1em 0 .5em 0 !important;
-  border-bottom: 1px solid #a62d3a;
+  border-bottom: 1px solid #b32817;
   width: 70%;
   font-size: 2em;
 }
@@ -151,7 +185,7 @@ h2 {
 h1 {
   font-family: "Roboto Condensed", Helvetica, sans-serif !important;
   margin: 4em 0 .5em 0 !important;
-  border-bottom: 2px solid #a62d3a;
+  border-bottom: 2px solid #b32817;
   width: 70%;
  }
 }
