@@ -2,101 +2,49 @@
 <% provide(:content, "Karen Kirr's Recent Web Development Projects.") %>
 
 <div class="page-header">
-
-  <h1><%=t '.title', :default => 'Welcome' %><br /> <span id="one">websites |</span> <span id="two">internal web apps</span></h1>
-
+<h1><%=t '.title', :default => 'Welcome' %></h1>
   <p class="hello"><strong>Hello, welcome to the home of Karen Kirr, Seattle-based web developer / designer.</strong></p>
 
   <p>The below projects only show a sampling of my web development work.
   <br /> Please see a few of my recent web development projects:</p>
 
-<div class="left-home">
-     <h2 id="webs"><%=t '.title', :default => 'Recent Web Dev Projects' %></h2>
 
-  <div class="boxgrid slide">
-  <%= image_tag("projects/clipper.jpg", :alt => "Executed front end development on clippervacations.com", :class => "cover") %>
-  <div class="boxcontent">
-    <h3>Client: <span>Clipper Vacations</span></h3>
-    <h4>Website: www.ClipperVacations.com</h3>
-    <p><strong>Languages / Technologies:</strong> Executed front-end theme development in WordPress; also integrated jQuery and Javascript, including Google Maps API.</p>
-  </div>
+<br class="clear" />
+<div class="ms-laptop-template">
+    <div class="ms-laptop-cont">
+       <%= image_tag("laptop/flat-laptop.png", :alt => "Web Projects", :class => "ms-laptop-bg") %>
+        <div class="ms-lt-slider-cont">
+            <!-- masterslider -->
+            <div class="master-slider ms-skin-default" id="masterslider">
+                <div class="ms-slide">
+                    <%= image_tag("laptop/blank.gif", :data => { :src  => "assets/laptop/1.jpg" }, :alt => "lorem ipsum dolor sit") %>
+                </div>
+                <div class="ms-slide">
+                    <%= image_tag("laptop/blank.gif", :data => { :src => "assets/laptop/2.jpg" }, :alt => "lorem ipsum dolor sit") %>
+                </div>
+                <div class="ms-slide">
+                    <%= image_tag("laptop/blank.gif", :data =>  { :src => "assets/laptop/3.jpg" }, :alt => "lorem ipsum dolor sit") %>
+                </div>
+                <div class="ms-slide">
+                    <%= image_tag("laptop/blank.gif", :data =>  { :src => "assets/laptop/4.jpg" }, :alt => "lorem ipsum dolor sit") %>
+                </div>
+                <div class="ms-slide">
+                    <%= image_tag("laptop/blank.gif", :data =>  { :src => "assets/laptop/5.jpg" }, :alt => "lorem ipsum dolor sit") %>
+                </div>
+                <div class="ms-slide">
+                    <%= image_tag("laptop/blank.gif", :data =>  { :src => "assets/laptop/6.jpg" }, :alt => "lorem ipsum dolor sit") %>
+                </div>
+                <div class="ms-slide">
+                    <%= image_tag("laptop/blank.gif", :data =>  { :src => "assets/laptop/7.jpg" }, :alt => "lorem ipsum dolor sit") %>
+                </div>
+
+            </div>
+            <!-- end of masterslider -->
+        </div>
+    </div>
 </div>
+<!-- end of template -->
 
-
-<div class="boxgrid slide">
-  <%= image_tag("projects/chef-jen-consulting.png", :alt => "Executed development using ASP.NET (C#)", :class => "cover") %>
-    <div class="boxcontent">
-      <h3>Client: <span>Chef Jenifer Smith</span></h3>
-      <h4>Website: www.ChefJenSmith.com</h4>
-    <p><strong>Languages / Technologies:</strong> Executed custom development in ASP.NET (C#). Also integrated JavaScript, jQuery and Twitter Bootstrap to integrate responsiveness.</p>
-  </div>
-</div>
-
-<div class="boxgrid slide">
-  <%= image_tag("projects/clipper-2.jpg", :alt => "Executed development using WordPress and AngularJS", :class => "cover") %>
-    <div class="boxcontent">
-      <h3>Client: <span>Clipper Vacations</span></h3>
-      <h4>Website: www.ClipperCafeSeattle.com</h4>
-    <p><strong>Languages / Technologies:</strong> Executed custom theme development in WordPress; also integrated AngularJS.</p>
-  </div>
-</div>
-
-  <div class="boxgrid slide">
-  <%= image_tag("projects/clipper-3.jpg", :alt => "Executed development using Drupal", :class => "cover" ) %>
-  <div class="boxcontent">
-    <h3>Client: <span>Clipper Vacations</span></h3>
-    <h4>Website: www.ClipperVacationsMagazine.com</h4>
-    <p><strong>Languages / Technologies:</strong> Executed custom theme development in Drupal; also integrated Javascript.</p>
-  </div>
-</div>
-
-<div class="boxgrid slide">
-  <%= image_tag("projects/clipper-4.jpg", :alt => "Executed development PHP", :class => "cover") %>
-  <div class="boxcontent">
-  <h3>Client: <span>WhaleWatching.com</span></h3>
-  <h4>Website: www.WhaleWatching.com</h4>
-    <p><strong>Languages / Technologies:</strong> Executed development in PHP. jQuery and Google Maps API, Twitter Bootstrap also integrated; site is responsive.</p>
-  </div>
- </div>
-
- <div class="boxgrid slide">
-    <%= image_tag("projects/catuara-panozzo-consulting.png", :alt => "Executed development PHP", :class => "cover") %>
-  <div class="boxcontent">
-  <h3>Client: <span>Catuara &amp; Panozzo Consulting, Inc.</span></h3>
-  <h4>Website: www.CatuaraPanozzo.com</h4>
-    <p><strong>Languages / Technologies:</strong> Executed development responsive site in PHP via custom WordPress theme. jQuery and Sass also integrated. Gruntjs also utilized to minify js files. Created grunt watch to monitor file changes (and minify on modification) via command line. </p>
-  </div>
- </div>
-
-
- <div class="boxgrid slide">
-    <%= image_tag("projects/Revolution-Classics.png", :alt => "Executed development PHP", :class => "cover") %>
-  <div class="boxcontent">
-  <h3>Client: <span>Revolution Classics</span></h3>
-  <h4>Website: www.Revolution-Classics.com</h4>
-    <p><strong>Languages / Technologies:</strong> Executed development in PHP via custom WordPress child theme. Javascript and CSS also integrated. Also utilized Photoshop to cutout custom car photos and overlay them on customer gradient for slider.</p>
-  </div>
- </div>
-
-   <br class="clear" />
-   <h2 id="apps"><%=t '.title', :default => 'Internal Web Apps' %></h2>
-  <div class="boxgrid slide">
-    <%= image_tag("projects/clipper-internal-1.png", :alt => "Executed development PHP", :class => "cover") %>
-  <div class="boxcontent">
-  <h3>Client: <span>Clipper Vacations</span></h3>
-  <h4>Website: internal web app; only viewable to customers.</h4>
-    <p><strong>Languages / Technologies:</strong> Executed development in PHP. PHP utilizes Types API. App allows Clipper reservation agents to update boarding times and messaging from the backend WordPress GUI dashboard via drop-down menus easily and at their leisure. Date and time automated. CSS also utilized. </p>
-  </div>
- </div>
-
-  <div class="boxgrid slide">
-    <%= image_tag("projects/clipper-internal-2.png", :alt => "Executed development PHP", :class => "cover") %>
-  <div class="boxcontent">
-  <h3>Client: <span>Clipper Vacations</span></h3>
-  <h4>Website: internal web app; only viewable to customers.</h4>
-    <p><strong>Languages / Technologies:</strong> Executed development in PHP. PHP utilizes Types API. App allows Clipper reservation agents to adjust weather and other conditions from the WordPress dashboard via drop-down menus. Weather is automated. Conditional (via PHP) CSS also utilized. </p>
-  </div>
- </div>
 
 
 

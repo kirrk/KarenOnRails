@@ -16,7 +16,10 @@
 //= require twitter/bootstrap
 //= require angular.min
 //= require skills.js.coffee
+//- require masterslider.min.js
 //= require_tree ./controllers/skills
+//= require custom.js
+//= require masterslider.min.js
 
 
 jQuery(document).ready(function ($) {
