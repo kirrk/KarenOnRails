@@ -187,6 +187,10 @@ h2 {
   width: 70%;
   font-size: 2em;
 }
+h2.recent-webs {
+  color: #6e6c6b;
+  font-size: 1.9em;
+}
 @media (min-width: 950px) {
 h1 {
   font-family: "Roboto Condensed", Helvetica, sans-serif !important;
