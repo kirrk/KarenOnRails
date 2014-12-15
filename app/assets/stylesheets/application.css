@@ -47,6 +47,9 @@ div.container-fluid {
  div.web-work {
   width: 800px;
  }
+ .set-up {
+  width: 700px;
+ }
 }
 body > div > div.page-header {
   margin: 4em auto 2em 4em !important;
@@ -129,6 +132,9 @@ body > div > div.col-md-9 > div > div {
   /* ...and now override with proper CSS property */
   transition:#bbb.2s ease-out, background 1s ease-in;
   box-shadow: none !important;
+}
+.navbar .btn-navbar .icon-bar {
+  background-color: #000 !important;
 }
 .dropdown-menu {
   left: 2em !important;
