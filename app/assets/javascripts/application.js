@@ -35,6 +35,14 @@ jQuery(document).ready(function ($) {
       }, 700);
   });
 
+
+  $('h1 span#one, h1 span#two').hover (function() {
+        $(this).css('opacity', 0.5);
+      }, function() {
+        $(this).css('opacity', 1);
+
+      });
+
   $('h1, div.social.dash').hover(function() {
       $('div.social.dash').show().stop().animate ({ left: '0', opacity: 0.9}, 500, 'easeInSine');
 
@@ -88,6 +96,7 @@ $('div.social.dash a').find('img').hover(function() {
   });
 
       $('div.left-home').delay(700).fadeIn(1000);
+
 
 });
 

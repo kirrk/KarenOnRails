@@ -13,6 +13,22 @@ div.left-home {
 div.left-home img {
   margin: 0;
 }
+@media (min-width: 950px) {
+.wrapper-home {
+  background: #a29c97;
+  margin: 0 0 0 -10em !important;
+  width: 1500px;
+ }
+ .home-right {
+  position: absolute;
+  bottom: 20em;
+  left: 51em;
+  width: 480px;
+ }
+}
+.home-right {
+  padding: 3em 0 0;
+}
 .boxgrid {
   font-family: 'Open Sans', sans-serif;
   width: 300px;

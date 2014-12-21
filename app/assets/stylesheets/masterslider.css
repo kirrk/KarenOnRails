@@ -1,4 +1,4 @@
-/** 
+/**
  *  Master Slider
  * 	Core css file
  */
@@ -62,7 +62,7 @@
 .ms-ie .ms-grab-cursor{cursor: url("../masterslider/style/grab.cur"), move;}
 .ms-ie .ms-grabbing-cursor {cursor: url("../masterslider/style/grabbing.cur"), move;}
 
-.ms-view { 
+.ms-view {
 	margin:0px auto;
 	overflow:hidden;
 	background:black;
@@ -82,7 +82,7 @@
 	-ms-transform: translateZ(0px);
 	-o-transform: translateZ(0px);
 	transform: translateZ(0px);
-	
+
 	-webkit-transform-style: preserve-3d;
 	-moz-transform-style: preserve-3d;
 	-ms-transform-style: preserve-3d;
@@ -173,7 +173,7 @@
 
 .ms-scroll-parallax .ms-slide-bgcont{
 }
- 
+
 /*-----------------------------------------------------------*/
 .ms-action-layer{cursor: pointer;}
 .ms-btn-container{position: absolute;}
@@ -205,7 +205,7 @@
 }
 
 .ms-btn-s{
-    padding: 14px 17px;  
+    padding: 14px 17px;
     font-size: 80%;
     line-height: 0;
 }
@@ -220,7 +220,7 @@
 }
 
 .ms-btn-l{
-    padding: 17px 50px;  
+    padding: 17px 50px;
     font-size: 120%;
 }
 

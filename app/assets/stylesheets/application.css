@@ -14,6 +14,9 @@
  * {
   box-shadow: none !important;
  }
+ .lefty {
+  float:left;
+ }
 a, a:hover {
   border: none !important;
 }
@@ -36,7 +39,7 @@ body {
 }
 @media (min-width: 950px){
 div.container-fluid {
-  margin: 1em 0 2em 3.3em;
+  margin: 1em 0 2em 3em;
  }
 }
 @media (min-width: 950px) {
@@ -48,12 +51,12 @@ div.container-fluid {
   width: 800px;
  }
  .set-up {
-  width: 700px;
+  width: 800px;
+  margin: 14em 0 0 -5em;
  }
 }
 body > div > div.page-header {
   margin: 4em auto 2em 4em !important;
-  clear: both;
 }
 body > div > div.col-md-9 > div > div > div {
   margin: 0 0 1em 2em;
@@ -104,6 +107,7 @@ body > div > div.col-md-9 > div > div {
   background: url('bg2.jpg')repeat;
   margin: 0;
   border-top: 9px solid #cb3623 !important;
+  border-bottom: thin solid #cb3623 !important
 }
 .nav-collapse .nav > li > a, .nav-collapse .dropdown-menu a {
     font-weight: 500 !important;
