@@ -1,4 +1,4 @@
-<% provide(:title, "Welcome to KK's site - Karen Kirr is a Seattle-based web developer / designer.") %>
+<% provide(:title, "Welcome to KK's site - Karen Kirr is a Seattle-based web developer.") %>
 <% provide(:content, "Karen Kirr's Recent Web Development Projects.") %>
 
 <div class="ms-laptop-template set-up">
@@ -31,9 +31,8 @@
           </div>
           <div class="home-right">
             <h1><%=t '.title', :default => 'Welcome' %></h1>
-            <p class="hello"><strong>Hello, welcome to the home of Karen Kirr, Seattle-based web developer / designer.</strong></p>
-            <p>The below projects only show a sampling of my web development work.
-            <br /> Please see a few of my recent web development projects:</p>
+            <p class="hello"><strong>Hello, welcome to the home of Karen Kirr, Seattle-based web developer.</strong></p>
+            <p>The projects depicted only show a sampling of my web development work. Learn more details about my <%= link_to("web development work", "works/web", :class=>"works")%>  and <%=link_to("skillset", "skills/", :class=>"works")%>.</p>
             </div>
         </div>
             <!-- end of masterslider -->
