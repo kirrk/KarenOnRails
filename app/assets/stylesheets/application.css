@@ -75,6 +75,9 @@ p.hello {
 img.kk{
   z-index: 200;
 }
+img.about-img {
+  display:none;
+}
 div.social.dash {
   background: #ddd;
   width: 65px;

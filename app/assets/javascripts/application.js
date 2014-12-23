@@ -88,6 +88,11 @@ $('div.social.dash a').find('img').hover(function() {
       $(".boxcontent", this).slideDown(100);
 
       }
+        function imgTime() {
+        setTimeout(function() { $('img.about-img').slideDown(1400);
+         }, 1000);
+      }
+      imgTime();
 
       $(".about-img").hover(function() {
         $(this).attr("src", "/assets/kk-pic-2.jpg").stop().css('opacity', .3).fadeTo(100, .8);
