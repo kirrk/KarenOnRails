@@ -13,6 +13,11 @@ div.left-home {
 div.left-home img {
   margin: 0;
 }
+a.works, a.works:visited, a.works:hover {
+  color: #0a88bb;
+  font-weight: 700;
+  background: transparent;
+}
 @media (min-width: 950px) {
 .wrapper-home {
   background: #a29c97;
