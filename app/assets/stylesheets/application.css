@@ -17,6 +17,10 @@
  .lefty {
   float:left;
  }
+ .construction {
+  font: 400 1.5em 'Leckerli One', Helvetica, Sans-serif;
+  color: #333;
+ }
 a, a:hover {
   border: none !important;
 }
