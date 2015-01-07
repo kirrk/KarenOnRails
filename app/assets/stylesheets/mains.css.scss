@@ -10,8 +10,14 @@ div.left-home {
   margin: 2em 0 0;
   display: none;
 }
+
 div.left-home img {
   margin: 0;
+}
+@media (max-width: 600px) {
+  div.left-home {
+    margin: 2em 0 0 -1em;
+  }
 }
 a.works, a.works:visited, a.works:hover {
   color: #0a88bb;
