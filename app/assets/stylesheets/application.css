@@ -170,8 +170,12 @@ color: #fff;
   .dropdown-menu > a:hover {
     background: transparent !important;
   }
+  .no-touch a:hover {
+    background: transparent !important;
+  }
   a, a:hover , li:hover {
     background: transparent !important;
+
   }
 }
 @media (max-width: 1000px) {
