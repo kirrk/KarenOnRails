@@ -101,10 +101,11 @@ $('div.social.dash a').find('img').hover(function() {
   });
 
       $('div.left-home').delay(700).fadeIn(1000);
+
       $('a.dropdown-toggle').click(function() {
         $(this).addClass('no-touch');
-
-      })
+      });
+      $('.nav-collapse .nav>li>a, .nav-collapse .dropdown-menu a').addClass('no-touch');
 
 });
 
