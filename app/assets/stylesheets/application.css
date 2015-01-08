@@ -160,9 +160,6 @@ color: #fff;
   background: #cb3623 !important;
 }
 @media (max-width: 600px) {
-  .dropdown-menu > li > a {
-    padding: 2em !important;
-  }
   .nav-collapse .nav>li>a, .nav-collapse .dropdown-menu a {
     z-index: 9000;
   }
@@ -173,9 +170,7 @@ color: #fff;
   .dropdown-menu > a:hover {
     background: transparent !important;
   }
-  .no-touch a:hover {
-    background: transparent !important;
-  }
+
   a, a:hover , li:hover {
     background: transparent !important;
 
