@@ -104,7 +104,9 @@ $('div.social.dash a').find('img').hover(function() {
 
       $('a.dropdown-toggle').click(function() {
         $(this).addClass('no-touch');
+        $(this).css('display', 'block');
       });
+
       $('.nav-collapse .nav>li>a, .nav-collapse .dropdown-menu a').addClass('no-touch');
 
 });
