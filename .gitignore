@@ -38,3 +38,4 @@ Thumbs.db
 
 # Ignore application configuration
 /config/application.yml
+/config/initializers/setup_mail.rb
